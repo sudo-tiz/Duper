@@ -1,0 +1,25 @@
+name: Bug report
+description: Report a problem with the app.
+title: "[Bug]: "
+body:
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      description: Which version of the app are you using?
+      placeholder: e.g. 1.2.3
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem description
+      description: Describe what happened and what you expected to happen.
+      placeholder: What did you do, and what went wrong?
+    validations:
+      required: true
+  - type: textarea
+    id: logcat
+    attributes:
+      label: Logcat output (optional)
+      description: If possible, paste the relevant Logcat lines. Remove any personal or sensitive information first.
